@@ -5,16 +5,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fonction pour masquer toutes les sections
     function hideAllSections() {
         sections.forEach(section => {
-            section.style.display = 'none'; // Cache toutes les sections
+            section.classList.remove('active'); // Retire la classe active pour toutes les sections
         });
     }
 
     // Fonction pour montrer la section sélectionnée
     function showSection(sectionId) {
-        hideAllSections();
+        hideAllSections(); // Cache toutes les sections
         const section = document.getElementById(sectionId);
         if (section) {
-            section.style.display = 'block'; // Affiche uniquement la section cliquée
+            section.classList.add('active'); // Montre la section sélectionnée
         }
     }
 
