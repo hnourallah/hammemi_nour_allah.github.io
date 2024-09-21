@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Ton Nom</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Section gauche fixe avec photo et infos personnelles -->
+    <!-- Sidebar gauche avec photo et infos personnelles -->
     <aside class="sidebar">
-        <img src="image_cv.png" alt="Ton Nom" class="profile-pic">
+        <img src="tonimage.jpg" alt="Ton Nom" class="profile-pic">
         <h2>Ton Nom</h2>
         <p class="title">Développeur Full Stack</p>
         <a href="https://linkedin.com/in/ton-profil" target="_blank" class="linkedin-link">LinkedIn</a>
@@ -21,21 +21,21 @@
         <!-- Navbar en haut -->
         <nav class="navbar">
             <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#education">Éducation</a></li>
-                <li><a href="#experience">Expériences</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-section="about">À propos</a></li>
+                <li><a href="#education" data-section="education">Éducation</a></li>
+                <li><a href="#experience" data-section="experience">Expériences</a></li>
+                <li><a href="#skills" data-section="skills">Compétences</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
             </ul>
         </nav>
 
-        <!-- Sections pour chaque partie du CV -->
+        <!-- Sections du CV -->
         <section id="about" class="section">
             <h2>À propos de moi</h2>
-            <p>Je suis un jeune diplômé en intelligence artificielle avec une licence en systèmes informatiques et logiciels...</p>
+            <p>Je suis un jeune diplômé en intelligence artificielle...</p>
         </section>
 
-        <section id="education" class="section">
+        <section id="education" class="section" style="display: none;">
             <h2>Éducation</h2>
             <ul>
                 <li><strong>Master en Intelligence Artificielle</strong> - Université X (2023)</li>
@@ -43,7 +43,7 @@
             </ul>
         </section>
 
-        <section id="experience" class="section">
+        <section id="experience" class="section" style="display: none;">
             <h2>Expériences</h2>
             <ul>
                 <li><strong>Développeur Full Stack</strong> - Digital Virgo (2022-2023)</li>
@@ -51,7 +51,7 @@
             </ul>
         </section>
 
-        <section id="skills" class="section">
+        <section id="skills" class="section" style="display: none;">
             <h2>Compétences</h2>
             <ul>
                 <li>JavaScript, HTML, CSS</li>
@@ -61,13 +61,15 @@
             </ul>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="section" style="display: none;">
             <h2>Contactez-moi</h2>
             <p>Email : tonemail@example.com</p>
             <p>Téléphone : +123 456 7890</p>
         </section>
     </main>
 
-    
+    <footer>
+        <p>&copy; 2024 Ton Nom. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
