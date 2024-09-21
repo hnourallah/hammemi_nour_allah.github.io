@@ -5,28 +5,28 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fonction pour masquer toutes les sections
     function hideAllSections() {
         sections.forEach(section => {
-            section.classList.remove('active'); // Cache toutes les sections
+            section.classList.remove('active');
         });
     }
 
-    // Fonction pour afficher une section en la rendant active
+    // Fonction pour afficher une section
     function showSection(sectionId) {
-        hideAllSections(); // Cache toutes les sections
+        hideAllSections();
         const section = document.getElementById(sectionId);
         if (section) {
-            section.classList.add('active'); // Affiche la section sélectionnée
+            section.classList.add('active');
         }
     }
 
-    // On affiche la première section ("about") au chargement de la page
+    // Affiche la section "about" par défaut
     showSection('about');
 
-    // Gestion des clics sur la navigation
+    // Gestion des clics
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
-            event.preventDefault(); // Empêche le comportement par défaut du lien
-            const sectionId = link.getAttribute('data-section'); // Récupère l'ID de la section
-            showSection(sectionId); // Affiche la section correspondante
+            event.preventDefault();
+            const sectionId = link.getAttribute('data-section');
+            showSection(sectionId);
         });
     });
 });

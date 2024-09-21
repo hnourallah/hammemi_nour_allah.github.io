@@ -1,70 +1,108 @@
-/* Barre de navigation */
-.navbar {
-  text-align: center;
-  margin-bottom: 40px;
-  margin-left: 250px; /* Espace pour la sidebar */
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-  padding: 10px 20px;
-  transition: color 0.3s ease;
-  border-radius: 5px;
-}
-
-.navbar ul li a:hover {
-  color: #00bcd4;
-  background-color: rgba(0, 188, 212, 0.1);
-}
-
-/* Sections */
-.section {
-  display: none; /* Toutes les sections sont cachées par défaut */
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.section.active {
-  display: block; /* La section active est visible */
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
-/* Sidebar */
+/* Style de la sidebar */
 .sidebar {
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
   width: 250px;
-  background-color: #f5f5f5;
+  background-color: #333; /* Couleur plus sombre pour un look moderne */
   padding: 20px;
   text-align: center;
-  border-right: 2px solid #ddd;
+  color: white; /* Texte en blanc pour contraster */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .profile-pic {
   width: 150px;
   border-radius: 50%;
+  border: 4px solid #fff; /* Bordure blanche pour une meilleure visibilité */
+}
+
+h2, .title, .linkedin-link {
+  color: #fff;
 }
 
 .title {
   font-size: 18px;
   margin-top: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .linkedin-link {
-  display: block;
+  display: inline-block;
   margin-top: 20px;
   text-decoration: none;
-  color: #0077b5;
+  color: #00bcd4;
+  background-color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-link:hover {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+/* Barre de navigation */
+.navbar {
+  margin-left: 250px; /* Espace laissé pour la sidebar */
+  background-color: #f0f0f0;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-bottom: 3px solid transparent;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #00bcd4;
+  border-bottom: 3px solid #00bcd4; /* Indicateur visuel d'hover */
+}
+
+/* Sections */
+.section {
+  display: none;
+  margin: 40px 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.section.active {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
