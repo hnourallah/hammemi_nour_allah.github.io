@@ -5,23 +5,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fonction pour masquer toutes les sections
     function hideAllSections() {
         sections.forEach(section => {
-            section.classList.remove('active'); // Retire la classe active pour toutes les sections
+            section.classList.remove('active'); // Cache toutes les sections
         });
     }
 
-    // Fonction pour montrer la section sélectionnée
+    // Fonction pour afficher une section en la rendant active
     function showSection(sectionId) {
         hideAllSections(); // Cache toutes les sections
         const section = document.getElementById(sectionId);
         if (section) {
-            section.classList.add('active'); // Montre la section sélectionnée
+            section.classList.add('active'); // Affiche la section sélectionnée
         }
     }
 
-    // On montre la section "about" par défaut au chargement
+    // On affiche la première section ("about") au chargement de la page
     showSection('about');
 
-    // Écoute les clics sur les liens du menu de navigation
+    // Gestion des clics sur la navigation
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault(); // Empêche le comportement par défaut du lien

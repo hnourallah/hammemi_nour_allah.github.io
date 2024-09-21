@@ -28,7 +28,7 @@
 
 /* Sections */
 .section {
-  display: none; /* Les sections sont cachées par défaut */
+  display: none; /* Toutes les sections sont cachées par défaut */
   opacity: 0;
   transition: opacity 0.5s ease;
 }
