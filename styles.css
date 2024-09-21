@@ -1,4 +1,4 @@
-/* Nouveau design global */
+/* Réinitialisation globale */
 * {
   margin: 0;
   padding: 0;
@@ -104,11 +104,13 @@ h2 {
 
 /* Contenu des sections */
 .section {
-  padding: 100px 30px;
+  padding: 80px 30px;
   margin-left: 250px;
+  margin-top: 70px; /* Ajoute un espace pour la navbar */
   display: none;
   opacity: 0;
   transition: opacity 0.5s ease;
+  max-width: 1000px; /* Limite la largeur du contenu */
 }
 
 .section.active {
@@ -138,4 +140,34 @@ footer {
   bottom: 0;
   left: 250px;
   width: calc(100% - 250px);
+}
+
+/* Pour les petits écrans (responsive) */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  .navbar {
+      margin-left: 0;
+      width: 100%;
+      top: auto;
+  }
+
+  .navbar ul {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .section {
+      margin-left: 0;
+      padding: 60px 20px;
+  }
+
+  footer {
+      width: 100%;
+      left: 0;
+  }
 }
