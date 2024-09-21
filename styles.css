@@ -107,7 +107,7 @@ h2 {
   padding: 80px 30px;
   margin-left: 250px;
   margin-top: 70px; /* Ajoute un espace pour la navbar */
-  display: none;
+  display: active;
   opacity: 0;
   transition: opacity 0.5s ease;
   max-width: 1000px; /* Limite la largeur du contenu */
