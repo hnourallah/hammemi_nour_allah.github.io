@@ -10,10 +10,12 @@
 <body>
     <!-- Sidebar gauche avec photo et infos personnelles -->
     <aside class="sidebar">
-        <img src="image_cv.png" alt="Ton Nom" class="profile-pic">
-        <h2>HAMMEMI NOUR ALLAH</h2>
-        <p class="title">Développeur Full Stack</p>
-        <a href="https://linkedin.com/in/ton-profil" target="_blank" class="linkedin-link">LinkedIn</a>
+        <div class="profile-container">
+            <img src="image_cv.png" alt="Ton Nom" class="profile-pic">
+            <h2>Hammemi Nour Allah </h2>
+            <p class="title">Développeur Full Stack</p>
+            <a href="https://linkedin.com/in/ton-profil" target="_blank" class="linkedin-link">LinkedIn</a>
+        </div>
     </aside>
 
     <!-- Contenu principal avec navigation -->
@@ -30,12 +32,12 @@
         </nav>
 
         <!-- Sections du CV -->
-        <section id="about" class="section">
+        <section id="about" class="section active">
             <h2>À propos de moi</h2>
             <p>Je suis un jeune diplômé en intelligence artificielle...</p>
         </section>
 
-        <section id="education" class="section" style="display: none;">
+        <section id="education" class="section">
             <h2>Éducation</h2>
             <ul>
                 <li><strong>Master en Intelligence Artificielle</strong> - Université X (2023)</li>
@@ -43,7 +45,7 @@
             </ul>
         </section>
 
-        <section id="experience" class="section" style="display: none;">
+        <section id="experience" class="section">
             <h2>Expériences</h2>
             <ul>
                 <li><strong>Développeur Full Stack</strong> - Digital Virgo (2022-2023)</li>
@@ -51,7 +53,7 @@
             </ul>
         </section>
 
-        <section id="skills" class="section" style="display: none;">
+        <section id="skills" class="section">
             <h2>Compétences</h2>
             <ul>
                 <li>JavaScript, HTML, CSS</li>
@@ -61,7 +63,7 @@
             </ul>
         </section>
 
-        <section id="contact" class="section" style="display: none;">
+        <section id="contact" class="section">
             <h2>Contactez-moi</h2>
             <p>Email : tonemail@example.com</p>
             <p>Téléphone : +123 456 7890</p>
