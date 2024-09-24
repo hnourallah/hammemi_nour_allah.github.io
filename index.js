@@ -7,14 +7,21 @@ document.addEventListener('DOMContentLoaded', function() {
         sections.forEach(section => {
             section.classList.remove('active');  // Enlève la classe 'active' pour masquer la section
         });
+
+        // Enlève la classe active des liens
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
     }
 
     // Fonction pour afficher une section spécifique
     function showSection(sectionId) {
         hideAllSections();  // Cache toutes les sections
         const section = document.getElementById(sectionId);  // Récupère la section à afficher par son ID
-        if (section) {
+        const activeLink = document.querySelector(`.navbar ul li a[data-section="${sectionId}"]`);  // Sélectionne le lien correspondant
+        if (section && activeLink) {
             section.classList.add('active');  // Ajoute la classe 'active' pour afficher la section
+            activeLink.classList.add('active');  // Ajoute la classe 'active' au lien correspondant
         }
     }
 
