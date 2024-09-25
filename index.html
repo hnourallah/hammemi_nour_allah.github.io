@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Ton Nom</title>
+    <title>CV - Mon Nom</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Sidebar gauche avec photo et infos personnelles -->
     <aside class="sidebar">
-        <img src="image_cv.png" alt="Ton Nom" class="profile-pic">
-        <h2>Ton Nom</h2>
+        <img src="image_cv.png" alt="Mon Nom" class="profile-pic">
+        <h2>Mon Nom</h2>
         <p class="title">Développeur Full Stack</p>
         <a href="https://linkedin.com/in/ton-profil" target="_blank" class="linkedin-link">LinkedIn</a>
     </aside>
@@ -21,22 +20,59 @@
         <!-- Navbar en haut -->
         <nav class="navbar">
             <ul>
-                <li><a href="#" data-page="about.html">À propos</a></li>
-                <li><a href="#" data-page="education.html">Éducation</a></li>
-                <li><a href="#" data-page="experience.html">Expériences</a></li>
-                <li><a href="#" data-page="skills.html">Compétences</a></li>
-                <li><a href="#" data-page="contact.html">Contact</a></li>
+                <li><a href="#" data-section="about">À propos</a></li>
+                <li><a href="#" data-section="education">Éducation</a></li>
+                <li><a href="#" data-section="experience">Expériences</a></li>
+                <li><a href="#" data-section="skills">Compétences</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
             </ul>
         </nav>
 
-        <!-- Zone de contenu où les pages seront chargées -->
-        <div id="content" class="content">
-            <!-- Le contenu des pages chargées s'affichera ici -->
+        <!-- Sections du CV (elles seront dynamiquement affichées) -->
+        <div id="content">
+            <section id="about" class="section">
+                <h2>À propos de moi</h2>
+                <p>Je suis un jeune diplômé en intelligence artificielle...</p>
+            </section>
+
+            <section id="education" class="section" style="display: none;">
+                <h2>Éducation</h2>
+                <ul>
+                    <li><strong>Master en Intelligence Artificielle</strong> - Université X (2023)</li>
+                    <li><strong>Licence en Systèmes Informatiques</strong> - Université Y (2021)</li>
+                </ul>
+            </section>
+
+            <section id="experience" class="section" style="display: none;">
+                <h2>Expériences</h2>
+                <ul>
+                    <li><strong>Développeur Full Stack</strong> - Digital Virgo (2022-2023)</li>
+                    <li><strong>Développeur Web</strong> - M2N, Société française (2021-2022)</li>
+                </ul>
+            </section>
+
+            <section id="skills" class="section" style="display: none;">
+                <h2>Compétences</h2>
+                <ul>
+                    <li>JavaScript, HTML, CSS</li>
+                    <li>React, Node.js</li>
+                    <li>Montage vidéo, Design produit, Logos</li>
+                    <li>Création de collections NFT en tant que designer</li>
+                </ul>
+            </section>
+
+            <section id="contact" class="section" style="display: none;">
+                <h2>Contactez-moi</h2>
+                <p>Email : tonemail@example.com</p>
+                <p>Téléphone : +123 456 7890</p>
+            </section>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Ton Nom. Tous droits réservés.</p>
+        <p>&copy; 2024 Mon Nom. Tous droits réservés.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
