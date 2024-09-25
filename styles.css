@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  background-color: #f4f4f4;
 }
 
 /* Sidebar */
@@ -41,6 +42,10 @@ main {
   margin-left: 250px; /* Espace pour la sidebar */
   padding: 20px;
   flex-grow: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* Navbar */
@@ -49,7 +54,6 @@ main {
   justify-content: center;
   background-color: #ecf0f1;
   padding: 10px;
-  margin-bottom: 20px;
   border-bottom: 2px solid #ddd;
 }
 
@@ -72,18 +76,23 @@ main {
   color: white;
 }
 
-/* Sections */
-.section {
-  display: none;
+/* Contenu */
+#content {
+  margin-top: 20px;
 }
 
-.section.active {
-  display: block;
+h2 {
+  color: #34495e;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: auto;
   font-size: 14px;
 }
