@@ -76,3 +76,76 @@ button:hover {
   opacity: 1;
   transition: opacity 0.5s ease;
 }
+
+ 
+
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.card {
+  background: rgba(218, 211, 211, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(168, 167, 167, 0.5);
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.links {
+  margin: 15px 0;
+}
+
+.links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #00bcd4;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00bcd4;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #008c9e;
+}
+
+.section {
+  display: none; /* Les sections sont cachées par défaut */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: absolute; /* Utilisé pour un meilleur contrôle de l'affichage */
+  top: 0; /* Alignement vertical */
+  left: 0; /* Alignement horizontal */
+  width: 100%; /* Pour s'assurer qu'elles remplissent toute la carte */
+}
+
+.section.active {
+  display: block; /* La section active est visible */
+  opacity: 1;
+}
