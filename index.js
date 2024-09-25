@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const discoverBtn = document.getElementById('discover-btn');
 
     // Fonction pour cacher toutes les sections
-    function hideAllSections() {
-        sections.forEach(section => {
-            section.classList.remove('active');
-        });
-    }
+    //function hideAllSections() {
+        //sections.forEach(section => {
+            //section.classList.remove('active');
+      //  });
+    //}
 
     // Écouteur d'événements pour le bouton "Découvrir mes compétences"
     discoverBtn.addEventListener('click', function () {
